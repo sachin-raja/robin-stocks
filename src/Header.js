@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from './robinhood.svg'
+import './Header.css';
 
 function Header() {
     return (
@@ -11,10 +12,17 @@ function Header() {
             {/* Search */}
             <div className="header__search">
                 <div className="header__searchContainer">
-                    
+                    <input placeholder="Search Stocks" type="text" /> 
                 </div>
             </div>
             {/* MenuItems */}
+            <div className="header__menuItems">
+                <a href="#"> Free Stocks</a>
+                <a href="#"> Portfolio</a>
+                <a href="#"> Cash</a>
+                <a href="#"> Messages</a>
+                <a href="#"> Account</a>
+            </div>
         </div>
     )
 }

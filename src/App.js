@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header'
+import NewsFeed from "./NewsFeed"
+import Stats from "./Stats"
+
 
 function App() {
   return (
@@ -11,7 +14,12 @@ function App() {
       </div>
       {/* Body */}
       <div className="header__body">
-        
+        <div className="app__container"> 
+          {/* news feed */}
+          <NewsFeed />
+          {/* stats */}
+          <Stats />
+        </div>
       </div>
     </div>
   );
